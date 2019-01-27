@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { proxyurl, url } from './apicalls/api.js'
 const parser = new DOMParser()
 
 fetch(proxyurl + url)
