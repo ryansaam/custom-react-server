@@ -1,18 +1,5 @@
 import React from 'react'
 
-import { proxyurl, url } from './apicalls/api.js'
-const parser = new DOMParser()
-
-fetch(proxyurl + url)
-.then(function(response) {
-  return response.text()
-})
-.then(function(data) {
-  const xmlDoc = parser.parseFromString(data,"text/xml")
-  console.log(xmlDoc)
-  console.log(data)
-})
-
 const App = () => {
   return (
     <div className="App">
